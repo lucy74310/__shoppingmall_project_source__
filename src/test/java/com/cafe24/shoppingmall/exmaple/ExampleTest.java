@@ -22,7 +22,6 @@ public class ExampleTest {
 	
 	
 	//Thread로 만들어서 돌리므로 테스트 시작 전, 후 로 하는 애들은 static으로 선언해줘야 한다.
-	
 	@BeforeClass
 	public static void setUpBefore() {
 		System.out.println("@BeforeClass");

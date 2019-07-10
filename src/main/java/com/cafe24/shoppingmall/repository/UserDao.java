@@ -12,10 +12,9 @@ public class UserDao {
 	@Autowired
 	private SqlSession sqlSession;
 	
-	public Boolean insertMember(UserVo userVo) {
-		Boolean result = 1 == sqlSession.insert("user.insert", userVo);
-		System.out.println(userVo);
-		return result;
+	public UserVo insertMember(UserVo userVo) {
+		sqlSession.insert("user.insert", userVo);
+		return userVo;
 	}
 	
 }

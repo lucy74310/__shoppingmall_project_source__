@@ -28,8 +28,19 @@ public class UserVo {
 	private String join_date;
 	
 	
-	
-	
+	public UserVo() {}
+	public UserVo(String id, String name, String password, String phone, String telephone,
+			String email, String gender, String birthday) {
+		this.id = id;
+		this.name = name;
+		this.password = password;
+		this.phone = phone;
+		this.telephone = telephone;
+		this.email = email;
+		this.gender = gender;
+		this.birthday = birthday;
+		
+	}
 	
 	
 	public Long getNo() {

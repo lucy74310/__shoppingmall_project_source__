@@ -12,7 +12,7 @@ public class UserService {
 	@Autowired
 	public UserDao userDao;
 	
-	public Boolean join(UserVo userVo) {
+	public UserVo join(UserVo userVo) {
 		return userDao.insertMember(userVo);
 	}
 	

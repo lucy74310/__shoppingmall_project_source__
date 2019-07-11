@@ -5,6 +5,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController("categoryManagementAPIController")
 @RequestMapping("/api/manage/category")
-public class CategoryManagement {
+public class CategoryManagementController {
 
 }

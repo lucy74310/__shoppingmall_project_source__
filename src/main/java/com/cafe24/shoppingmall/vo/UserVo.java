@@ -17,8 +17,10 @@ public class UserVo {
 	
 	private String phone;
 	
+	@NotEmpty
 	private String telephone;
 	
+	@NotEmpty
 	private String email;
 	
 	private String gender;

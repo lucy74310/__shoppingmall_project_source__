@@ -5,12 +5,8 @@ public class JSONResult {
 	private Object data;
 	private String message;
 	
-	public JSONResult(String result) {
-		this.result = result;
-	}
-	public JSONResult(String result, Object data) {
-		this.result = result;
-		this.data = data;
+	private JSONResult() {
+		
 	}
 
 	private JSONResult(String result, String message, Object data) {
@@ -35,6 +31,10 @@ public class JSONResult {
 	
 	public static JSONResult fail(String message) {
 		return new JSONResult("fail", message, null);
+	}
+	
+	public static JSONResult fail(String message, Object data) {
+		return new JSONResult("fail", message, data);
 	}
 
 	@Override
